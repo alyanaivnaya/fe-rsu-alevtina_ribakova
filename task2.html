@@ -1,25 +1,118 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<p><a name="top"></a></p>
+	<head>		
 		<title>Task 2</title>
-		<p><a href="#bottom">Go to bottom</a></p>
 		<meta charset="utf-8">
 		<meta name="description" content="HTML Practice Task 2">
 	</head>
 	
 	<body>	
-		<h1>Task 1</h1>
-		<p>
+		<p><a id="top"></a></p>
+		<h1>Task 2</h1>
+		<p><a href="#bottom">Go to bottom</a></p>
+		<ul>
+			<li>Prints 10 names with a line break between each name. The list should be alphabetized, and to do this place a subscripted number next to each name based on where it will go in the alphabetized list. (Example: Alan <sub>1</sub>). Print first, the unalphabetized list with a subscript number next to each name, then the alphabetized list. Both lists should have an &lt;h1&gt; level heading.</li>
+			<li>Print two lists with any information you want. One list should be an ordered list, the other list should be an unordered list.</li>
+			<li>Print some preformatted text of your choosing.</li>
+			<li>Print a definition list with 5 items.</li>
+		</ul>
+		<h3>Contents</h3>
+		<ol>
+			<li><a href="#name_list">List with names</a>
 			<ul>
-				<li>Create a webpage that prints your name to the screen.</li>
-				<li>Add numbers from 1 - 10 to the screen in unordered list.</li>
-				<li>Add paragraph "When was this webpage created? Check page's title for the answer."
-				to the screen, and set the title of the page to the current date.</li>
-				<li>Add any text of your choosing to the screen.</li>
-			</ul>
-		</p>
+				<li><a href="#name_list_un">Unalphabetized list</a></li>
+				<li><a href="#name_list_al">Alphabetized list</a></li>
+			</ul></li>
+			<li><a href="#ol_ul">Ordered & unordered lists</a>
+			<ul>
+				<li><a href="#ol_li">Ordered list</a></li>
+				<li><a href="#ul_li">Unordered list</a></li>
+			</ul></li>
+			<li><a href="#pref">Preformatted text</a></li>
+			<li><a href="#def">Definition list</a></li>
+		</ol>
+		
+		<h2><a id="name_list">List with names</a></h2>
+		<h1><a id="name_list_un">Unalphabetized list</a></h1>
+		<p>Julia <sub>7</sub><br>
+		Kate <sub>8</sub><br>
+		Alan <sub>1</sub><br>
+		Mick <sub>9</sub><br>
+		Gregory <sub>5</sub><br>
+		Helen <sub>6</sub><br>
+		Anastasia <sub>2</sub><br>
+		Miranda <sub>10</sub><br>
+		Bruce <sub>4</sub><br>
+		Bella <sub>3</sub></p>
+		<h1><a id="name_list_al">Alphabetized list</a></h1>
+		<p>Alan<br>
+		Anastasia<br>
+		Bella<br>
+		Bruce<br>
+		Gregory<br>
+		Helen<br>
+		Julia<br>
+		Kate<br>
+		Mick<br>
+		Miranda</p>
+		
+		<h2><a id="ol_ul">Ordered & unordered lists</a></h2>
+		<h3><a id="ol_li">Ordered list</a></h3>
+		<ol>
+			<li>C++</li>
+			<li>C#</li>
+			<li>Java</li>
+			<li>Delphi</li>
+			<li>Pascal</li>
+			<li>Perl</li>
+		</ol>
+		<h3><a id="ul_li">Unordered list</a></h3>
+		<ul>
+			<li>Tomato</li>
+			<li>Chicken</li>
+			<li>Meat</li>
+			<li>Sugar</li>
+			<li>Orion</li>
+			<li>Salt</li>
+		</ul>
+		
+		<h2><a id="pref">Preformatted text</a></h2>
+		<pre>
+		Я стукаюсь
+			 о стол,
+				о шкафа острия —
+		четыре метра ежедневно мерь.
+		Мне тесно здесь
+			в отеле Istria —
+		на коротышке
+			rue Campagne-Premiere.
+		Мне жмет.
+			  Парижская жизнь не про нас —
+		в бульвары
+			  тоску рассыпай.
+		Направо от нас —
+			Boulevard Montparnasse,
+		налево —
+			Boulevard Raspail.
+			
+					<b>В. Маяковский</b>
+		</pre>
+		
+		<h2><a id="def">Definition list</a></h2>
+		<dl>
+			<dt><b>HTML</b></dt>
+				<dd>HyperText Markup Language.</dd>
+			<dt><b>XHTML</b></dt>
+				<dd>Extensible HyperText Markup Language.</dd>
+			<dt><b>CSS</b></dt>
+				<dd>Cascading Style Sheets.</dd>
+			<dt><b>JavaScript</b></dt>
+				<dd>A high-level, dynamic, untyped, and interpreted programming language.</dd>
+			<dt><b>PHP</b></dt>
+				<dd>A server-side scripting language designed for web development.</dd>
+		</dl>
+		
 		<p><a href="#top">Go to top</a></p>
-		<p><a name="bottom"></a></p>
+		<p><a id="bottom"></a></p>
 	</body>
 </html>
