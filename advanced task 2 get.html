@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HTML Advanced Task 2 get</title>
+		<meta charset="utf-8">
+		<meta name="description" content="HTML Advanced Task 2 get">
+	</head>
+	
+	<body>		
+		<h1>Registration form</h1>
+		<form action="http://httpbin.org/get" method="get">
+			<fieldset>
+				<legend>Personal data</legend>
+				<table border="0">
+					<tr>
+						<td>First name</td>
+						<td><input type="text" name="firstname"></td>
+					</tr>
+					<tr>
+						<td>Surname</td>
+						<td><input type="text" name="surname"></td>
+					</tr>
+					<tr>
+						<td rowspan="2" valign="middle">Sex</td>
+						<td><input type="radio" name="sex" value="male" checked>Male</td>
+					</tr>
+					<tr>
+						<td><input type="radio" name="sex" value="female">Female</td>
+					</tr>
+				</table>				
+			</fieldset>
+    
+			<fieldset>
+				<legend>Contact Information</legend>
+				<table border="0">
+					<tr>
+						<td>Site</td>
+						<td><input type="url" name="site"></td>
+					</tr>
+					<tr>
+						<td>E-mail</td>
+						<td><input type="email" name="email"></td>
+					</tr>
+					<tr>
+						<td>Phone</td>
+						<td><input type="tel" name="phone"></td>
+					</tr>
+				</table>
+			</fieldset>
+			<br>			
+			<input type="submit" value="Отправить">
+		</form>		
+	</body>
+</html>

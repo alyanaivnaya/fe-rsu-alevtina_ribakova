@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HTML Advanced Task 4 post</title>
+		<meta charset="utf-8">
+		<meta name="description" content="HTML Advanced Task 4 get">
+	</head>
+	
+	<body>	
+		<h1>The Form</h1>
+		<form action="http://httpbin.org/get" method="get">
+			<fieldset>
+				<legend>Personal data</legend>
+				
+				<table border="0">
+					<tr>
+						<td>First name</td>
+						<td><input type="text" name="firstname"></td>
+					</tr>
+					<tr>
+						<td>Middle name</td>
+						<td><input type="text" name="middlename"></td>
+					</tr>
+					<tr>
+						<td>Surname</td>
+						<td><input type="text" name="surname"></td>
+					</tr>
+					<tr>
+						<td rowspan="2" valign="middle">Sex</td>
+						<td><input type="radio" name="sex" value="male" checked>Male</td>
+					</tr>
+					<tr>
+						<td><input type="radio" name="sex" value="female">Female</td>
+					</tr>
+					<tr>
+						<td>Age</td>
+						<td><input type="number" name="age" min="18" max="101"></td>
+					</tr>
+					<tr>
+						<td>Country</td>
+						<td><input list="country">    
+							<datalist id="country">
+								<option value="Russia">
+								<option value="USA">
+								<option value="England">
+								<option value="France">
+								<option value="Germany">
+							</datalist>
+						</td>
+					</tr>
+					<tr>
+						<td>City</td>
+						<td><input type="checkbox" name="agree">
+							Ryazan
+							<input type="checkbox" name="agree">
+							Moscow
+						</td>
+					</tr>
+					<tr>
+						<td>Photography</td>
+						<td><input type="file" name="img"></td>
+					</tr>
+				</table>
+				<hr>
+				
+				
+				<table border="0">
+					<tr>
+						<td valign="middle">Title</td>
+						<td><select name="title" size="8">
+								<optgroup label="Technologies">
+									<option value="webmaster">Web Master</option>				
+									<option value="dbadmin">Database Administrator</option>	
+									<option value="cadesign">Computer-aided design</option>
+								</optgroup>
+								<optgroup label="Finance">
+									<option value="econplan">Economic Planning</option>
+									<option value="managacc">Management accounting</option>
+									<option value="budgandplan">Budgeting and planning</option>
+								</optgroup>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>Salary</td>
+						<td><input type="range" min="0" max="10" step="1" value="6"></td>
+					</tr>					
+				</table>
+			
+				<textarea name="about" rows="10" cols="40" placeholder="Tell us about yourself..."></textarea>
+			</fieldset>
+    
+			<fieldset>
+				<legend>Contact Information</legend>
+				<table border="0">
+					<tr>
+						<td>Site</td>
+						<td><input type="url" name="site"></td>
+					</tr>
+					<tr>
+						<td>E-mail</td>
+						<td><input type="email" name="email"></td>
+					</tr>
+					<tr>
+						<td>Phone</td>
+						<td><input type="tel" name="phone"></td>
+					</tr>
+				</table>
+			</fieldset>
+			<br>
+			Password
+			<input type="password" name="password" required>
+			<br><br>
+			<input type="submit" value="Отправить">
+			<input type="reset" value="Сбросить">
+		</form>		
+	</body>
+</html>
