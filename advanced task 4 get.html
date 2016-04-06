@@ -14,16 +14,16 @@
 				
 				<table border="0">
 					<tr>
-						<td>First name</td>
-						<td><input type="text" name="firstname"></td>
+						<td><label for="firstname">First name</label></td>
+						<td><input type="text" id="firstname"></td>
 					</tr>
 					<tr>
-						<td>Middle name</td>
-						<td><input type="text" name="middlename"></td>
+						<td><label for="middlename">Middle name</label></td>
+						<td><input type="text" id="middlename"></td>
 					</tr>
 					<tr>
-						<td>Surname</td>
-						<td><input type="text" name="surname"></td>
+						<td><label for="surname">Surname</label></td>
+						<td><input type="text" id="surname"></td>
 					</tr>
 					<tr>
 						<td rowspan="2" valign="middle">Sex</td>
@@ -33,12 +33,12 @@
 						<td><input type="radio" name="sex" value="female">Female</td>
 					</tr>
 					<tr>
-						<td>Age</td>
-						<td><input type="number" name="age" min="18" max="101"></td>
+						<td><label for="age">Age</label></td>
+						<td><input type="number" id="age" min="18" max="101"></td>
 					</tr>
 					<tr>
-						<td>Country</td>
-						<td><input list="country">    
+						<td><label for="country1">Country</label></td>
+						<td><input list="country" id="country1">    
 							<datalist id="country">
 								<option value="Russia">
 								<option value="USA">
@@ -94,22 +94,22 @@
 				<legend>Contact Information</legend>
 				<table border="0">
 					<tr>
-						<td>Site</td>
-						<td><input type="url" name="site"></td>
+						<td><label for="site">Site</label></td>
+						<td><input type="url" id="site"></td>
 					</tr>
 					<tr>
-						<td>E-mail</td>
-						<td><input type="email" name="email"></td>
+						<td><label for="email">E-mail</label></td>
+						<td><input type="email" id="email"></td>
 					</tr>
 					<tr>
-						<td>Phone</td>
-						<td><input type="tel" name="phone"></td>
+						<td><label for="phone">Phone</label></td>
+						<td><input type="tel" id="phone"></td>
 					</tr>
 				</table>
 			</fieldset>
 			<br>
-			Password
-			<input type="password" name="password" required>
+			<label for="password">Password</label>
+			<input type="password" id="password" required>
 			<br><br>
 			<input type="submit" value="Отправить">
 			<input type="reset" value="Сбросить">

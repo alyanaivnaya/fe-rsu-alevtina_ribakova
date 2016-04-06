@@ -112,24 +112,24 @@
 		<form action="http://httpbin.org/post">
 			<fieldset>
 				<legend>Personal data</legend>
-				Surname
-				<input type="text" name="surname">
+				<label>Surname
+				<input type="text" name="surname"></label>
 				<br><br>
-				First name
-				<input type="text" name="firstname">
+				<label>First name
+				<input type="text" name="firstname"></label>
 				<br><br>
-				Middle name
-				<input type="text" name="middlename">
+				<label>Middle name
+				<input type="text" name="middlename"></label>
 				<br><br>
 				You are
 				<input type="radio" name="sex" value="male" checked>male
 				<input type="radio" name="sex" value="female">female
 				<br><br>
-				Age
-				<input type="number" name="age" min="18" max="101">
+				<label>Age
+				<input type="number" name="age" min="18" max="101"></label>
 				<br><br>
-				Country of Residence								
-				<input list="residence">    
+				<label>Country of Residence								
+				<input list="residence"></label>    
 				<datalist id="residence">
 					<option value="Russia">
 					<option value="USA">
@@ -168,19 +168,19 @@
     
 			<fieldset>
 				<legend>Contact Information</legend>
-				Site
-				<input type="text" name="site">
+				<label>Site
+				<input type="text" name="site"></label>
 				<br><br>
-				Email
-				<input type="text" name="email">
+				<label>Email
+				<input type="text" name="email"></label>
 				<br><br>
-				Phone
-				<input type="text" name="phone">
+				<label>Phone
+				<input type="text" name="phone"></label>
 				<br><br>
 			</fieldset>
 			<br>
-			Password
-			<input type="password" name="password" required>
+			<label>Password
+			<input type="password" name="password" required></label>
 			<br><br>
 			<input type="submit" value="Отправить">
 			<input type="reset" value="Сбросить">
