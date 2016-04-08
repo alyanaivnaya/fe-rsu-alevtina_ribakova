@@ -1,0 +1,33 @@
+#table_1 {
+	font-family: arial;
+	color: #51637b;
+}
+
+.header {
+	text-transform: uppercase;
+	color: #7a808f;	
+	font-size: 8pt;
+	height: 0.6cm;
+}
+
+td {
+	font-size: 11pt;	
+	padding: 14px;
+}
+
+.name {
+	text-transform: capitalize;
+}
+
+tr.light {
+	background-color: #f2f6fa;
+}
+
+tr.dark {
+	background-color: #e3eaf3;
+}
+
+tr:hover {
+	background-color: #e2e5e9;
+	cursor: pointer;
+}
