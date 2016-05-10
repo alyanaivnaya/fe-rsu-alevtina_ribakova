@@ -1,0 +1,12 @@
+#greencircle {
+	height: 200px;
+	width: 200px;
+	background: #00bc9e;
+	border-radius: 100%;
+	margin: 100px 200px;
+}
+#greyborder {
+	border: 2px solid grey;
+	height: 400px;
+	width: 600px;
+}

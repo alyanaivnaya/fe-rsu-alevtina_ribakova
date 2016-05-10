@@ -1,0 +1,9 @@
+#bluebutton {
+	height: 50px;
+	width: 200px;
+	background: linear-gradient(to top, #7e85d0, #575de7, #7e85d0);
+	border: 2px solid white;
+	outline:2px solid blue;
+	color: white;
+	font: 18pt sans-serif;
+}
