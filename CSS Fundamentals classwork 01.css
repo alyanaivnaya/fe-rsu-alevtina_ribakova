@@ -1,0 +1,121 @@
+@font-face {
+  font-family: 'Open Sans';
+  src: url('Fonts/OpenSans-CondLight.ttf');
+}
+
+#maindiv {
+	display:table;
+	border-spacing: 12px 6px; 
+}
+
+span {
+	display: table-cell;
+	background: #3498db;
+	box-sizing: border-box;
+	width: 100px;
+	height: 100px;
+	padding: 5px;
+	border: 2px solid white;
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-size: 20pt;
+	color: #fff;
+	text-align: center;
+	vertical-align: middle;
+}
+
+span:hover {
+  cursor: pointer;
+}
+
+#span1 {
+	transition-property: background, color;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-out;
+}
+
+#span1:hover {
+	background: #fff;
+	color: #3498db;
+}
+
+#span2 {
+	transition-property: opacity;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-out;
+}
+
+#span2:hover {
+	opacity: 0;
+}
+
+#span3 {
+	transition-property: transform, opacity, border;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-out;
+}
+
+#span3:hover {
+	transform: scale(2);
+	opacity: 0;	
+	border: 0;
+}
+
+#span4 {
+	transition-property: border, padding;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-out;
+}
+
+#span4:hover {
+	border: 20px solid white;
+	padding: 0;
+}
+
+#span5 {
+	transition-property: transform;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-out;
+}
+
+#span5:hover {
+	transform: rotate(90deg);
+}
+
+#span6 {
+	transition-property: transform;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-out;
+}
+
+#span6:hover {
+	transform: scale(1,0);
+}
+
+#span7 {
+	transition-property: transform;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-out;
+}
+
+#span7:hover {
+	transform: scale(0);
+}
+#span8 {
+	transition-property: transform;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-out;
+}
+
+#span8:hover {
+	transform: scale(1.5,0);
+}
+
+#span9 {
+	transition-property: transform;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-out;
+}
+
+#span9:hover {
+	transform: skew(45deg, 45deg);
+}

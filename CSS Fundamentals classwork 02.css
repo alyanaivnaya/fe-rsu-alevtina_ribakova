@@ -1,0 +1,73 @@
+
+
+.andro_body {
+	background: #99cc00;
+	height: 160px;
+	width: 120px;
+	border-radius: 15px;
+	border-top-left-radius: 80px 60px; 
+	border-top-right-radius: 80px 60px;
+	position: absolute;
+    top: 25px;
+    left: 63px;	
+}
+.andro_hand {
+	background: #99cc00;
+	height: 80px;
+	width: 25px;
+	border-radius: 15px;
+	border-top-left-radius: 80px 60px; 
+	border-top-right-radius: 80px 60px; 
+	border-bottom-left-radius: 80px 60px; 
+	border-bottom-right-radius: 80px 60px; 
+	position: absolute;
+    top: 75px;
+}
+#hand1 {	
+    left: 30px;	
+}
+#hand2 {	
+    left: 190px;	
+}
+.andro_leg {
+	background: #99cc00;
+	height: 80px;
+	width: 25px;
+	border-radius: 15px;
+	border-bottom-left-radius: 80px 60px; 
+	border-bottom-right-radius: 80px 60px; 
+	position: absolute;
+    top: 150px;
+}
+#leg1 {	
+    left: 85px;	
+}
+#leg2 {	
+    left: 135px;	
+}
+.andro_eye {
+	background: #fff;
+	height: 13px;
+	width: 13px;
+	border-radius: 100%;
+	position: absolute;
+    top: 45px;
+}
+#eye1 {	
+    left: 90px;	
+}
+#eye2 {	
+    left: 140px;	
+}
+.andro_neck {
+	background: #fff;
+	height: 7px;
+	width: 130px;
+	position: absolute;
+    top: 70px;	
+    left: 60px;	
+}
+.border1 {
+	box-shadow: 0 0 10px rgba(0, 0, 0, .5) inset;
+	height: 230px;
+	width: 230px;
