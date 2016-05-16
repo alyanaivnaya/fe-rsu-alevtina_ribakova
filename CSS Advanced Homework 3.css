@@ -1,0 +1,89 @@
+.details, .livedemo {
+	height: 15px;
+	color: #6e6e6e;
+	padding: 5px 15px;
+	background: linear-gradient(to top, #f1f2eb, #fff);
+	font-family: sans-serif;
+	font-size: 10pt;
+	text-align: center;
+	vertical-align: middle;
+	border: 1px solid #c8c8c8;
+	border-radius: 2px;
+}
+.details {	
+	width: 50px;
+}
+.livedemo {
+	width: 75px;
+}
+.image {
+	width: 180px;
+	height: 190px;
+	background-repeat: no-repeat;
+	background-size: 180px 190px;
+	background-position: center;
+	padding: 10px;
+	border: 1px solid #c8c8c8;
+	border-radius: 2px;
+}
+#image1 {	
+	background-image: url(Images/th1.png);
+}
+#image2 {	
+	background-image: url(Images/th2.png);
+}
+
+/*float*/
+.float > .image, .float > .details, .float > .livedemo {
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 15px;
+}
+.float > .details {
+	margin-right: 13px;
+}
+.float > .image {	
+	margin-bottom: 8px;
+}
+
+.float > .image:nth-child(3n+2), .float > .details:nth-child(3n+2) {
+	clear: left;
+}
+.inline-box {
+	clear: both;
+}
+
+/*inline-box*/
+.inline-box > * {
+	display: inline-block;
+}
+.inline-box > .image, .inline-box > .details, .inline-box > .livedemo {
+	margin-right: 17px;
+	margin-bottom: 15px;
+}
+.inline-box > .details {
+	margin-right: 9px;
+}
+.inline-box > .image {	
+	margin-bottom: 5px;
+}
+/*flex*/
+.flex, .line1, .line2, .block1, .block2, .buttons {
+	display: flex;
+	justify-content: space-between;
+	align-content: space-between;
+}
+.flex, .block1, .block2 {
+	flex-direction: column;
+}
+
+.line1, .line2 {
+	width: 645px;
+}
+
+.block1, .block2 {	
+	height: 368px;
+}
+.buttons {
+	flex-basis: 145px;
+}
