@@ -17,6 +17,7 @@
 //     }
 // }
 
+
 // var calc = new Calculator(12);
 // document.write(calc.multiply(2)); //24
 // document.write(calc.add(3)); //15
