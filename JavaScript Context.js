@@ -29,11 +29,11 @@ function Calculator(leftOperand) {
     
     this.add = function(rightOperand) {        
         leftOperand = leftOperand + rightOperand;
-        return leftOperand;
+        return this;
     }
     this.subtract = function(rightOperand) {        
         leftOperand = leftOperand - rightOperand;
-        return leftOperand;
+        return this;
     }
     this.multiply = function(rightOperand) {
         leftOperand = leftOperand * rightOperand;
@@ -43,6 +43,9 @@ function Calculator(leftOperand) {
         leftOperand = leftOperand / rightOperand;
         return this;
     }
+    this.toString = function() {
+    return leftOperand;
+  }
 }
 
 var calc = new Calculator(12);
