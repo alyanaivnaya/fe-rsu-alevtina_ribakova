@@ -55,6 +55,7 @@ var itemMouseOut = {
 
 var headelem = document.getElementById("head");
 var listelem = document.getElementById("list");
+var itemarray = document.getElementsByClassName("item");
 var item1elem = document.getElementById("item1");
 var item2elem = document.getElementById("item2");
 var item3elem = document.getElementById("item3");
@@ -69,7 +70,9 @@ for(var key in list){
   listelem.style[key] = list[key];
 }
 for(var key in item){
-  item1elem.style[key] = item2elem.style[key] = item3elem.style[key] = item4elem.style[key] = item5elem.style[key] = item[key];
+	for(var i=0; i<itemarray.length; i++) {
+		itemarray[i].style[key] = item[key];
+	}
 }
 for(var key in title){
   titleelem.style[key] = title[key];
@@ -102,44 +105,56 @@ else {
         listelem.style[key] = list[key];
     }
 }});
-item1elem.addEventListener("mouseover", function() {
-for(var key in itemMouseOver){
-  item1elem.style[key] = itemMouseOver[key];
-}});
-item2elem.addEventListener("mouseover", function() {
-for(var key in itemMouseOver){
-  item2elem.style[key] = itemMouseOver[key];
-}});
-item3elem.addEventListener("mouseover", function() {
-for(var key in itemMouseOver){
-  item3elem.style[key] = itemMouseOver[key];
-}});
-item4elem.addEventListener("mouseover", function() {
-for(var key in itemMouseOver){
-  item4elem.style[key] = itemMouseOver[key];
-}});
-item5elem.addEventListener("mouseover", function() {
-for(var key in itemMouseOver){
-  item5elem.style[key] = itemMouseOver[key];
-}});
 
-item1elem.addEventListener("mouseout", function() {
-for(var key in itemMouseOut){
-  item1elem.style[key] = itemMouseOut[key];
-}});
-item2elem.addEventListener("mouseout", function() {
-for(var key in itemMouseOut){
-  item2elem.style[key] = itemMouseOut[key];
-}});
-item3elem.addEventListener("mouseout", function() {
-for(var key in itemMouseOut){
-  item3elem.style[key] = itemMouseOut[key];
-}});
-item4elem.addEventListener("mouseout", function() {
-for(var key in itemMouseOut){
-  item4elem.style[key] = itemMouseOut[key];
-}});
-item5elem.addEventListener("mouseout", function() {
-for(var key in itemMouseOut){
-  item5elem.style[key] = itemMouseOut[key];
-}});
+for(var i=0; i<itemarray.length; i++) {
+	itemarray[i].addEventListener("mouseover", function() {
+		for(var key in itemMouseOver){
+			itemarray[i].style[key] = itemMouseOver[key];
+		}});
+		itemarray[i].addEventListener("mouseout", function() {
+			for(var key in itemMouseOut){
+				itemarray[i].style[key] = itemMouseOut[key];
+			}});
+}
+
+// item1elem.addEventListener("mouseover", function() {
+// for(var key in itemMouseOver){
+//   item1elem.style[key] = itemMouseOver[key];
+// }});
+// item2elem.addEventListener("mouseover", function() {
+// for(var key in itemMouseOver){
+//   item2elem.style[key] = itemMouseOver[key];
+// }});
+// item3elem.addEventListener("mouseover", function() {
+// for(var key in itemMouseOver){
+//   item3elem.style[key] = itemMouseOver[key];
+// }});
+// item4elem.addEventListener("mouseover", function() {
+// for(var key in itemMouseOver){
+//   item4elem.style[key] = itemMouseOver[key];
+// }});
+// item5elem.addEventListener("mouseover", function() {
+// for(var key in itemMouseOver){
+//   item5elem.style[key] = itemMouseOver[key];
+// }});
+
+// item1elem.addEventListener("mouseout", function() {
+// for(var key in itemMouseOut){
+//   item1elem.style[key] = itemMouseOut[key];
+// }});
+// item2elem.addEventListener("mouseout", function() {
+// for(var key in itemMouseOut){
+//   item2elem.style[key] = itemMouseOut[key];
+// }});
+// item3elem.addEventListener("mouseout", function() {
+// for(var key in itemMouseOut){
+//   item3elem.style[key] = itemMouseOut[key];
+// }});
+// item4elem.addEventListener("mouseout", function() {
+// for(var key in itemMouseOut){
+//   item4elem.style[key] = itemMouseOut[key];
+// }});
+// item5elem.addEventListener("mouseout", function() {
+// for(var key in itemMouseOut){
+//   item5elem.style[key] = itemMouseOut[key];
+// }});
