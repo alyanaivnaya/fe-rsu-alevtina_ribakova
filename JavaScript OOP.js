@@ -1,56 +1,60 @@
 var shape = {
     type: undefined,
     getType: function() {
-        document.write(this.type);
+        document.write(this.type + '</br>');
     },
     getPerimeter: function() {      
-        document.write(this.perimeter);
+        document.write(this.perimeter + '</br>');
     },
     draw: function() {
-        document.write(this.type + ' is drawn');
+        document.write(this.type + ' is drawn </br>');
     }
 }
 
+
 function Triangle(a,b,c) {
-    this.prototype = shape;
     this.type = 'triangle';
     this.a = a;
     this.b = b;
     this.c = c;
-    this.perimeter = this.a + this.b + this.c;
+    this.perimeter = a + b + c;
 }
+Triangle.prototype = shape;
 
 function Square(a,b,c,d) {
-    this.prototype = shape;
     this.type = 'square';
     this.a = a;
     this.b = b;
     this.c = c;
     this.d = d;
-    this.perimeter = this.a + this.b + this.c + this.d;
+    this.perimeter = a + b + c + d;
+}
+Square.prototype = shape;
+
+function GreenSquare(a,b,c,d) {
+    this.color = 'green';
+    Square.call(this, a, b, c, d);
 }
 
-var greenSquare = new Square(5,5,5,5);
+GreenSquare.prototype = new Square();
 
-greenSquare.color = 'green';
-greenSquare.getColor = function () {
-    document.write(this.color);
+GreenSquare.prototype.getColor = function () {
+    document.write(this.color + '</br>');
 }
-greenSquare.getSquare = function () {
-    var square = this.a * this.b * this.c * this.d;
-    document.write(square);
+GreenSquare.prototype.getFigureSquare = function () {
+    this.figureSquare = this.a * this.b * this.c * this.d;
+    document.write(this.figureSquare + '</br>');
 }
 
-var redTriangle = new Triangle(4,4,4);
+var square1 = new GreenSquare(5,5,5,5);
+var triangle1 = new Triangle(4,3,2);
 
+square1.getType();
+square1.getPerimeter();
+square1.draw();
+square1.getColor();
+square1.getFigureSquare();
 
-greenSquare.getType();
-greenSquare.getPerimeter();
-greenSquare.draw();
-// greenSquare.getColor();
-// greenSquare.getSquare();
-redTriangle.getType();
-redTriangle.getPerimeter();
-redTriangle.draw();
-// greenSquare.getColor();
-// greenSquare.getSquare();
+triangle1.getType();
+triangle1.getPerimeter();
+triangle1.draw();
